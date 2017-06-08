@@ -1,5 +1,5 @@
 # Python_learning
-Some pratice python files.
+Some practice python files.
 
 - inherit_poly.py 关于继承和多态的练习，里面还有@staticmethod的使用
 
