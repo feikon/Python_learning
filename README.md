@@ -7,4 +7,6 @@ Some pratice python files.
 
 - python_property  python @property的使用，还有疑问待解决，property作用，为什么用它
 
+- enum_class       python枚举类的使用，后面加入@unique 以及用enum类定制的自定义类
+
 
