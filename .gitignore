@@ -101,6 +101,14 @@ ENV/
 .mypy_cache/
 
 # -------------self new rules------------------
-# pycharm workspace
-.xml
+# reference from:http://www.cnblogs.com/kevingrace/p/5690241.html
 
+# pycharm workspace
+# .xml file can ignore idea folder so revise it
+
+# ignore .idea folder
+/.idea/
+
+
+# not ignore .gitignore file 
+!.gitignore
