@@ -59,23 +59,26 @@ git checkout your_branch                 # 转换到你的分支，用git checko
 git branch -a                            # 查看所有分支
 git push origin --delete dele_branch     # 删除分支
 
-	1. 查看说哟
+	1. 
 
 
 
 Tips:常见报错：
 
- ! [rejected] master -> master (fetch first)
+1. [rejected] master -> master (fetch first)
 可能在不同的机器上上做了提交？？远程分支上存在本地分支中不存在的提交，往往是多人协作开发过程中遇到的问题，可以先fetch再merge，也就是pull，
 把远程分支上的提交合并到本地分支之后再push。如果你确定远程分支上那些提交都不需要了，那么直接
 git push origin master -f
 强行让本地分支覆盖远程分支。
 
 
-2.
-error: failed to push some refs 
+2. error: failed to push some refs 
 可以使用
 git pull --rebase origin master          # 把远程仓库的最新文件下载下来
 然后push
 
 git push origin master
+
+3. The current branch test has no upstream branch.
+>  git push --set-upstream origin test
+
