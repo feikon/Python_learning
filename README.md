@@ -9,4 +9,6 @@ Some practice python files.
 
 - enum_class       python枚举类的使用，后面加入@unique 以及用enum类定制的自定义类
 
+- mydict mydict_tetst   python单元测试联系，引入unittest模块
+
 
