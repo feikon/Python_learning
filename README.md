@@ -16,4 +16,7 @@ Some practice python files.
 - mydict mydict_tetst   
 单元测试联系，引入unittest模块
 
+- doctest    
+文档测试，三个双引号引用，写入测试用例
+
 
