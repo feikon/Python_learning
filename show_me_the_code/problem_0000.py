@@ -27,13 +27,18 @@ import logging
 def add_num_to_image(image, number=44):
     try:
         with Image.open(image) as img:
-            width, height = img.size
-            # TODO:Adjust position and
-            draw_position_width = 0.8 * width
-            draw_position_height = 0.08 * height
+            # width, height = img.size
+            # TODO:Adjust position and font(Done)
+            # draw_position_width = 0.8 * width
+            # draw_position_height = 0.08 * height
             draw_font = ImageFont.truetype('C:\Windows\Fonts\Arial.ttf')
             draw = ImageDraw.Draw(img)
-            draw.text((draw_position_width, draw_position_height), str(number), fill=(255, 33, 33), font=draw_font)
+            # 中间卖萌版
+            draw.ellipse([325, 255, 345, 275], fill='red')
+            draw.text((330, 260), str(number), fill='white', font=draw_font)
+
+            # 右上数字版
+            # draw.text((draw_position_width, draw_position_height), str(number), fill=(255, 33, 33), font=draw_font)
             img_save_name = image.split('.')[0] + '_processed.jpg'
             img.save(img_save_name, 'JPEG')
             img.show(img_save_name)
