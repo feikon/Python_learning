@@ -51,6 +51,7 @@ def store_in_mysql(code_list):
                             PRIMARY KEY(id)
                         )''')
             for code in code_list:
+                print(code)
                 cur.execute('INSERT INTO code(code) VALUES({})'.format(code))
                 cur.connection.commit()
         except BaseException as e:
