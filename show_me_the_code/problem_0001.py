@@ -40,10 +40,15 @@ def generate_active_code(code_length, code_numbers=200):
             pass
         else:
             result[key] = 1
-    for key in result:
-        print(key)
+    # for key in result:
+    #     print(key)
+    return result           # result 为一个字典
 
 if __name__ == '__main__':
     # generate_active_code(10, 10)
-    generate_active_code(16)
+    result = generate_active_code(16)
+    for key_order, avtive_code in enumerate(result):
+        print(key_order, avtive_code)
+
+
 
