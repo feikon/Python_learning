@@ -28,8 +28,10 @@ def change_size(path):
     for root, dirs, files in os.walk(path):
         for name in files:
             filename = join(root, name)
-            print(filename)
-            change_size_operation(filename)
+            # 解决非jpg和png格式图片乱入问题，还可以加其他图片类型
+            if filename.split('.')[1] == 'jpg' or filename.split('.')[1] == 'png':
+                print(filename)
+                change_size_operation(filename)
 
 
 def change_size_operation(filename):
