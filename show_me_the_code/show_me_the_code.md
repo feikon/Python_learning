@@ -7,3 +7,5 @@
 4. Problem_0003    将生成的激活码保存到Redis（非关系型数据库）中
 
 5. Problem_0004    统计一个文件中单词出现的次数
+
+6. Problem_0005    调整大于iphone5尺寸大小，用到PIL库中Image以及OS库中对目录遍历
