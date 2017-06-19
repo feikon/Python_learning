@@ -24,7 +24,7 @@ from lxml import etree
 from collections import OrderedDict
 
 
-def read_xls(filename):
+def read_xlsx(filename):
     data = xlrd.open_workbook(filename)
     table = data.sheets()[0]
     c = OrderedDict()
@@ -44,8 +44,8 @@ def save_xml(xml_file, data):
     output.close()
 
 if __name__ == '__main__':
-    xlsx_file = read_xls('D:/show_me/txt/student.xlsx')
-    save_xml('D:/show_me/txt/student.xml', xlsx_file)
+    xlsx_file_data = read_xlsx('D:/show_me/txt/student.xlsx')
+    save_xml('D:/show_me/txt/student.xml', xlsx_file_data)
 
 
 
