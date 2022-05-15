@@ -63,3 +63,5 @@ git pull --rebase origin master          # 把远程仓库的最新文件下载�
 - The current branch test has no upstream branch.
 
      git push --set-upstream origin test
+
+- 使用ssh, 最好不适用https
